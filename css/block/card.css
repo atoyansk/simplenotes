@@ -1,0 +1,66 @@
+.card{
+  display: inline-block;
+  box-sizing: border-box;
+  border-radius: 5%;
+  padding: 16px;
+  width: 23%;
+  position: relative;
+  margin-right: 8px;
+  box-shadow: 4px 4px 6px #888888;
+}
+
+.wrap-card-options{
+  position:absolute;
+  top:-16px;
+  left: 0;
+  opacity: 0;
+
+  transition: opacity 0.2s linear;
+}
+.card:hover .wrap-card-options{
+  opacity: 1;
+}
+.card-options{
+  display: inline-block;
+  box-sizing: border-box;
+  width: 32px;
+  height: 32px;
+  text-indent: -9999px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-color: #FFF;
+  cursor: pointer;
+}
+.card-options.isActive{
+  border-width: 4px;
+}
+
+.card_delete{
+  background-image: url(../../images/delete.svg);
+  background-position: 40% 40%;
+  margin-right: 10px;
+}
+.card_edit{
+  background-image: url(../../images/edit.png);
+  background-position: center center;
+}
+
+.card-content[contenteditable="true"]{
+  outline: 2px dashed rgba(0, 0, 0, 0.6);
+}
+
+[data-color="first"]{
+  background-color: #45AAEE;
+}
+[data-color="second"]{
+  background-color: #FF1010;
+}
+[data-color="third"]{
+  background-color: #76EF40;
+}
+[data-color="fourth"]{
+  background-color: #EBEF40;
+}
