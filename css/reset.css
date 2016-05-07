@@ -4,7 +4,7 @@
   border: none;
   outline: none;
 }
-body{
+body, textarea{
   font-family: 'Verdana', sans-serif;
 }
 a{
